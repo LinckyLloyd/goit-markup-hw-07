@@ -319,6 +319,10 @@ img {
 }
 
 /* Footer */
+
+.d-footer-form{
+    width: auto!important;
+}
 .footerstyle{
     background-color: var(--grey);
     padding: 100px 0;
@@ -524,6 +528,7 @@ img {
     line-height: 1.11;
     color: var(--grey);
     margin-bottom: 72px;
+    text-align: center;
 }
 
 .customers-link{
