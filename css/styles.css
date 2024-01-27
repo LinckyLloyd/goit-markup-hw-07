@@ -453,6 +453,10 @@ img {
     overflow: hidden;
 }
 
+.project-image img{
+    width: 360px;
+}
+
 .description{
     position: absolute;
     top: 0;
@@ -997,6 +1001,13 @@ img {
         display: none;
     }
 
+    .project-image img {
+        width: 100%;
+    }
+
+    .js-open-menu{
+        display: block;
+    }
     .header-container{
         padding: 25px 25px;
     }
@@ -1143,6 +1154,19 @@ img {
         gap: 0;
         justify-content: space-between;
 
+    }
+
+    .portfolio-list{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .portfolio-list-item{
+        flex-basis: calc((100% - 48px) / 1);
+    }
+
+    .portfolio-list-images {
+        justify-content: center;
     }
 
 }
