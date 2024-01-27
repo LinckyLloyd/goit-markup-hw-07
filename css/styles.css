@@ -479,6 +479,7 @@ img {
 
 }
 
+
 .address-list{
 	display: flex;
     gap: 40px;
@@ -973,3 +974,166 @@ img {
 .footer-svgsubscribe{
     margin-left: 16px;
 }
+
+/* hw7 */
+/* hamburger */
+
+
+
+
+/* mobile view */
+
+@media screen and (max-width:767px) {
+    .portfolio-hdr-menu, .section-three, .address-style, .sectiondiv  {
+        display: none;
+    }
+      
+    .section-two .list{
+        flex-direction: column;
+        row-gap: 72px;
+    }
+
+    .section-two-header, .customertitle {
+        text-align: center;
+
+    }
+
+    .section-two-header {
+        font-size: 36px;
+    }
+
+    .section-one {
+        max-width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .employee-list {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 72px;
+        
+    }
+
+    .employee-bgcolor {
+        width: 264px;
+        height: 260px;
+        margin: 0 auto;
+    }
+
+    .social-media-list {
+        margin-top: 8px;
+    }
+
+    .customerlist {
+        flex-wrap: wrap;
+        row-gap: 72px;
+        
+    }
+
+    .customer-pic{
+    width: calc((100% - 24px) / 2);
+    }
+
+    .footer-content-wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-paragraph{
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 72px;
+    }
+
+    .footer-paragraph {
+        text-align: start;
+    }
+
+    .footer-socials-text {
+        text-align: center;
+    }
+
+    .footer-list{
+        margin-bottom: 72px;
+    }
+
+    .p-footer-form {
+        text-align: center;
+    }
+
+    .f-footer-form {
+        flex-direction: column;
+    }
+
+    .input-form {
+        width: 100%;
+    }
+
+    .b-footer-subscribe{
+        width: 117px;
+        margin: 0 auto;
+    }
+
+    .section-two-paragraph{
+        font-size: 16px;
+    }
+
+
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 80px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #fff;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+.menu-toggle{
+    border: none;
+    background-color: transparent;
+}
+.js-open-menu{
+    display: none;
+}
+
+.mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
